@@ -19,6 +19,7 @@ st.set_page_config(page_title=f"The New York Times Topic Modeling",page_icon=ico
 # Company Logo & Main Header
 logo = Image.open(Path("./topic_modeling_logo.png"))
 st.image(logo, use_column_width='auto')
+st.markdown("##### OE Learning Series 2022 **Tech Talk**")
 # st.header("NYTimes Headlines Topic Extraction")
 
 @st.cache
