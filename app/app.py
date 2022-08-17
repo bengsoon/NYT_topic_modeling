@@ -15,13 +15,13 @@ import json
 from collections import Counter
 
 # Set the Browser Title
-icon = Image.open(Path("img/carigalihess_logo.jpg"))
+icon = Image.open(Path("img/topic_modeling_logo.png"))
 st.set_page_config(page_title=f"The New York Times Topic Modeling",page_icon=icon, layout="wide" )
 
 # Company Logo & Main Header
-logo = Image.open(Path("img/carigalihess_logo.png"))
+logo = Image.open(Path("img/topic_modeling_logo.png"))
 st.image(logo, use_column_width='auto')
-st.header("NYTimes Headlines Topic Extraction")
+# st.header("NYTimes Headlines Topic Extraction")
 
 @st.cache
 def read_data(file="../data/2021-6_2022-8_NYtimes_headlines.csv"):
