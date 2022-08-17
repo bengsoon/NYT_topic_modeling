@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -8,13 +7,12 @@ import streamlit.components.v1 as components
 from PIL import Image
 from pathlib import Path
 
-import logging
-import re
-
-import json
 from collections import Counter
 
+import os
+
 # Set the Browser Title
+os.getcwd()
 icon = Image.open(Path("./img/topic_modeling_logo.png"))
 st.set_page_config(page_title=f"The New York Times Topic Modeling",page_icon=icon, layout="wide" )
 
