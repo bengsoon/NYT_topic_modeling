@@ -12,7 +12,7 @@ from collections import Counter
 import os
 
 # Set the Browser Title
-os.getcwd()
+print(os.getcwd())
 icon = Image.open(Path("./img/topic_modeling_logo.png"))
 st.set_page_config(page_title=f"The New York Times Topic Modeling",page_icon=icon, layout="wide" )
 
