@@ -13,11 +13,11 @@ import os
 
 # Set the Browser Title
 print(os.getcwd())
-icon = Image.open(Path("topic_modeling_logo.png"))
+icon = Image.open(Path("./topic_modeling_logo.png"))
 st.set_page_config(page_title=f"The New York Times Topic Modeling",page_icon=icon, layout="wide" )
 
 # Company Logo & Main Header
-logo = Image.open(Path("topic_modeling_logo.png"))
+logo = Image.open(Path("./topic_modeling_logo.png"))
 st.image(logo, use_column_width='auto')
 # st.header("NYTimes Headlines Topic Extraction")
 
