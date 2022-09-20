@@ -22,16 +22,16 @@ st.image(logo, use_column_width='auto')
 st.header("NYTimes Headlines Topic Extraction")
 
 @st.cache
-def read_data(file="../data/2021-6_2022-8_NYtimes_headlines.csv"):
+def read_data(file="./data/2021-6_2022-8_NYtimes_headlines.csv"):
     return pd.read_csv(file)
 
 
 def insert_html(file_title, height=450, width=2000):
-    html=open(f"../reports/{file_title}.html", 'r', encoding='utf-8')
+    html=open(f"./reports/{file_title}.html", 'r', encoding='utf-8')
     components.html(html.read(), height=height, width=width)
 
 def get_text(file_title):
-    txt = open(f"../reports/{file_title}.txt", 'r', encoding='utf-8').read()
+    txt = open(f"./reports/{file_title}.txt", 'r', encoding='utf-8').read()
     return txt.split("\n")
 
 
@@ -65,7 +65,7 @@ def pg_2_topic_modeling():
     insert_html("visualize_documents_selected_reduced", 1000)
 
 def pg_3_topics():
-    info_df = read_data("../reports/frequency.csv").iloc[1:][["Topic", "Count", "Name"]]
+    info_df = read_data("./reports/frequency.csv").iloc[1:][["Topic", "Count", "Name"]]
     st.markdown("#### 3. Extracted Topics")
     st.write("- Below are the extracted topics / themes from the 160k rows of NYTimes's headlines:")
     st.dataframe(info_df)
