@@ -22,6 +22,6 @@ Run streamlit
     streamlit run app.py
 ```
 
-## Viewing Results
-I have created a Streamlit app that presents the results of the Topic Modeling. I am still on deploying the streamlit app on Streamlit server -- stay tuned!
+## Viewing Results in Web App
+I have created a Streamlit app that presents the results of the Topic Modeling [here](https://bengsoon-nyt-topic-modeling-app-deploy-7bqvw2.streamlitapp.com/). 
 
