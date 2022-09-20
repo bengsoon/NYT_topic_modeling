@@ -16,6 +16,12 @@ Within the cloned folder, create the conda environment:
     conda create -f environment.yml
 ```
 
+Run streamlit
+``` bash
+    cd app
+    streamlit run app.py
+```
+
 ## Viewing Results
 I have created a Streamlit app that presents the results of the Topic Modeling. I am still on deploying the streamlit app on Streamlit server -- stay tuned!
 
