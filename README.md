@@ -23,5 +23,5 @@ Run streamlit
 ```
 
 ## Viewing Results in Web App
-I have created a Streamlit app that presents the results of the Topic Modeling [here](https://bengsoon-nyt-topic-modeling-app-deploy-7bqvw2.streamlitapp.com/). 
+I have created a Streamlit app that presents the results of the Topic Modeling [https://nyt-topicmodel.streamlitapp.com/](https://nyt-topicmodel.streamlitapp.com/). 
 
